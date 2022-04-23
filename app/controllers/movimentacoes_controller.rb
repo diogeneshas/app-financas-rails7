@@ -4,11 +4,12 @@ class MovimentacoesController < ApplicationController
   # GET /movimentacoes or /movimentacoes.json
   def index
     @movimentacoes = Movimentacao.all
+
+    @saldo = Movimentacao.saldo_atual
   end
 
   # GET /movimentacoes/1 or /movimentacoes/1.json
-  def show
-  end
+  def show; end
 
   # GET /movimentacoes/new
   def new
@@ -16,8 +17,7 @@ class MovimentacoesController < ApplicationController
   end
 
   # GET /movimentacoes/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /movimentacoes or /movimentacoes.json
   def create
