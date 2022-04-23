@@ -1,0 +1,2 @@
+class Movimentacao < ApplicationRecord
+end
